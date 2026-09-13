@@ -1,0 +1,4019 @@
+[
+  {
+    "id": "terral-001",
+    "category": "Petiscos",
+    "name": "Casquinha de siri",
+    "description": "Preparação de carne de siri servida na casquinha. Preço por unidade.",
+    "prices": [
+      42
+    ],
+    "note": "Consulte a equipe sobre a composição do preparo.",
+    "image": "assets/terral-001.webp",
+    "imageKind": "source",
+    "portionLabel": "Unidade",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-001-view2-corrected-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-001-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-001.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-001-view2-corrected-view-2.webp"
+  },
+  {
+    "id": "terral-002",
+    "category": "Petiscos",
+    "name": "Bolinho de bacalhau",
+    "description": "Porção com 12 bolinhos de bacalhau.",
+    "prices": [
+      70
+    ],
+    "note": "",
+    "image": "assets/terral-002.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-002.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-002-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-002-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-002.webp"
+  },
+  {
+    "id": "terral-003",
+    "category": "Petiscos",
+    "name": "Bastonetes de pepino e cenoura",
+    "description": "Bastonetes de pepino e cenoura com molho de creme de leite e hortelã.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-003.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-003.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-003-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-003-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-003.webp"
+  },
+  {
+    "id": "terral-004",
+    "category": "Petiscos",
+    "name": "Isca de badejo",
+    "description": "Tiras de peixe badejo à milanesa.",
+    "prices": [
+      65,
+      105
+    ],
+    "note": "",
+    "image": "assets/terral-004.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-004.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-004-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-004-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-004.webp"
+  },
+  {
+    "id": "terral-005",
+    "category": "Petiscos",
+    "name": "Lula à dorê",
+    "description": "Anéis de lula empanados.",
+    "prices": [
+      65,
+      110
+    ],
+    "note": "",
+    "image": "assets/terral-005.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-005.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-005-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-005-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-005.webp"
+  },
+  {
+    "id": "terral-006",
+    "category": "Petiscos",
+    "name": "Camarão à dorê",
+    "description": "Camarão com casca, empanado.",
+    "prices": [
+      65,
+      110
+    ],
+    "note": "",
+    "image": "assets/terral-006.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-006.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-006-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-006-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-006.webp"
+  },
+  {
+    "id": "terral-007",
+    "category": "Petiscos",
+    "name": "Camarão alho e óleo",
+    "description": "Camarão com casca preparado no alho e óleo.",
+    "prices": [
+      95,
+      125
+    ],
+    "note": "",
+    "image": "assets/terral-007.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-007.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-007-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-007-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-007.webp"
+  },
+  {
+    "id": "terral-008",
+    "category": "Petiscos",
+    "name": "Ostras Cananéia",
+    "description": "Ostras de Cananéia. O cardápio informa uma dúzia e duas opções de porção.",
+    "prices": [
+      50,
+      80
+    ],
+    "note": "Confirme com a equipe a quantidade de ostras em cada tamanho.",
+    "image": "assets/terral-008.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-008.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-008-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-008-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-008.webp"
+  },
+  {
+    "id": "terral-009",
+    "category": "Petiscos",
+    "name": "Isca de frango à milanesa",
+    "description": "Tiras de frango à milanesa.",
+    "prices": [
+      55,
+      90
+    ],
+    "note": "",
+    "image": "assets/terral-009.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-009.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-009-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-009-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-009.webp"
+  },
+  {
+    "id": "terral-010",
+    "category": "Petiscos",
+    "name": "Isca de bife à milanesa",
+    "description": "Tiras de bife à milanesa.",
+    "prices": [
+      65,
+      100
+    ],
+    "note": "",
+    "image": "assets/terral-010-view2-view-2.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação pode variar.",
+    "images": [
+      {
+        "src": "assets/terral-010-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-010.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-010-view2-view-2.webp"
+  },
+  {
+    "id": "terral-011",
+    "category": "Petiscos",
+    "name": "Isca de mignon à milanesa",
+    "description": "Tiras de carne mignon fritas à milanesa.",
+    "prices": [
+      75,
+      120
+    ],
+    "note": "",
+    "image": "assets/pratos/mignon-close.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação pode variar.",
+    "images": [
+      {
+        "src": "assets/pratos/mignon-close.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-010-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/pratos/mignon-close.webp"
+  },
+  {
+    "id": "terral-012",
+    "category": "Petiscos",
+    "name": "Fritas",
+    "description": "Porção de batata frita.",
+    "prices": [
+      40,
+      55
+    ],
+    "note": "",
+    "image": "assets/terral-012.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-012.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-012-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-012-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-012.webp"
+  },
+  {
+    "id": "terral-013",
+    "category": "Petiscos",
+    "name": "Mandioca",
+    "description": "Porção de mandioca frita.",
+    "prices": [
+      40,
+      50
+    ],
+    "note": "",
+    "image": "assets/terral-013.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-013.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-013-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-013-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-013.webp"
+  },
+  {
+    "id": "terral-014",
+    "category": "Petiscos",
+    "name": "Monte de Trigo",
+    "description": "Porção de camarão e lula.",
+    "prices": [
+      115,
+      180
+    ],
+    "note": "Consulte a equipe sobre o preparo.",
+    "image": "assets/terral-014.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa de camarão e lula fritos; confirme o preparo.",
+    "images": [
+      {
+        "src": "assets/terral-014.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa de camarão e lula fritos; confirme o preparo."
+      },
+      {
+        "src": "assets/terral-014-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-014-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-014.webp"
+  },
+  {
+    "id": "terral-015",
+    "category": "Saladas",
+    "name": "Mista",
+    "description": "Alface, cenoura, beterraba, ervilha, milho, vagem, pepino, tomate e batata.",
+    "prices": [
+      55
+    ],
+    "note": "",
+    "image": "assets/terral-015.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-015.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-015-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-015-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-015.webp"
+  },
+  {
+    "id": "terral-016",
+    "category": "Saladas",
+    "name": "Mata Atlântica",
+    "description": "Alface, agrião, tomate, azeitona preta e alho frito.",
+    "prices": [
+      65
+    ],
+    "note": "",
+    "image": "assets/terral-016.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-016.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-016-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-016-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-016.webp"
+  },
+  {
+    "id": "terral-017",
+    "category": "Saladas",
+    "name": "Tropical",
+    "description": "Palmito, alface picada, cenoura, abacaxi, parmesão e molho rosê.",
+    "prices": [
+      60
+    ],
+    "note": "",
+    "image": "assets/terral-017.webp",
+    "imageKind": "source",
+    "portionLabel": "Inteira",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-017-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-017-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-017.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-017-view2-view-2.webp"
+  },
+  {
+    "id": "terral-018",
+    "category": "Saladas",
+    "name": "Tomate",
+    "description": "Tomate, alface e cebola.",
+    "prices": [
+      35
+    ],
+    "note": "",
+    "image": "assets/terral-018.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-018.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-018-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-018-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-018.webp"
+  },
+  {
+    "id": "terral-019",
+    "category": "Saladas",
+    "name": "Salada Terral",
+    "description": "Alface, cenoura, beterraba, ervilha, milho, pepino e tomate.",
+    "prices": [
+      45
+    ],
+    "note": "",
+    "image": "assets/terral-019.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-019.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-019-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-019-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-019.webp"
+  },
+  {
+    "id": "terral-020",
+    "category": "Saladas",
+    "name": "Palmito",
+    "description": "Palmito e azeitona.",
+    "prices": [
+      45,
+      60
+    ],
+    "note": "",
+    "image": "assets/terral-020.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-020.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-020-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-020-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-020.webp"
+  },
+  {
+    "id": "terral-021",
+    "category": "Saladas",
+    "name": "Especial",
+    "description": "Alface, cenoura, beterraba, ervilha, milho, vagem, pepino, tomate, batata, pimentão, cebola, ovo, azeitona e palmito.",
+    "prices": [
+      65,
+      110
+    ],
+    "note": "",
+    "image": "assets/terral-021.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-021.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-021-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-021-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-021.webp"
+  },
+  {
+    "id": "terral-022",
+    "category": "Saladas",
+    "name": "Kani",
+    "description": "Kani, alface picada, parmesão, tomate seco e molho de mostarda.",
+    "prices": [
+      43,
+      52
+    ],
+    "note": "",
+    "image": "assets/terral-022.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-022.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-022-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-022-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-022.webp"
+  },
+  {
+    "id": "terral-023",
+    "category": "Pratos Terral",
+    "name": "Terral 1",
+    "description": "Peixe, frango ou bife, acompanhado de arroz, salada e feijão.",
+    "prices": [
+      65
+    ],
+    "note": "Escolha da proteína com a equipe: peixe, frango ou bife.",
+    "image": "assets/terral-023.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Imagem ilustrativa da opção com frango; escolha peixe, frango ou bife.",
+    "images": [
+      {
+        "src": "assets/terral-023.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção com frango; escolha peixe, frango ou bife."
+      },
+      {
+        "src": "assets/terral-023-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-023-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-023.webp"
+  },
+  {
+    "id": "terral-024",
+    "category": "Pratos Terral",
+    "name": "Terral 2",
+    "description": "Carne desfiada acebolada, arroz à grega, salada e feijão.",
+    "prices": [
+      70
+    ],
+    "note": "",
+    "image": "assets/terral-024.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-024.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-024-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-024-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-024.webp"
+  },
+  {
+    "id": "terral-025",
+    "category": "Pratos Terral",
+    "name": "Terral Salmão",
+    "description": "Filé de salmão com creme de leite e amêndoas, acompanhado de arroz e salada.",
+    "prices": [
+      73
+    ],
+    "note": "",
+    "image": "assets/terral-025.webp",
+    "imageKind": "source",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-025-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-025-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-025.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-025-view2-view-2.webp"
+  },
+  {
+    "id": "terral-026",
+    "category": "Pratos Terral",
+    "name": "Terral Camarão",
+    "description": "Camarão ao vinho branco, creme de leite, curry e champignon. Acompanha arroz e salada.",
+    "prices": [
+      73
+    ],
+    "note": "",
+    "image": "assets/terral-026.webp",
+    "imageKind": "source",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-026-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-026-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-026.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-026-view2-view-2.webp"
+  },
+  {
+    "id": "terral-027",
+    "category": "Pratos Terral",
+    "name": "Terral Badejo",
+    "description": "Filé de badejo, acompanhado de arroz, salada e feijão.",
+    "prices": [
+      73
+    ],
+    "note": "",
+    "image": "assets/terral-027.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-027.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-027-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-027-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-027.webp"
+  },
+  {
+    "id": "terral-028",
+    "category": "Pratos Terral",
+    "name": "Terral Linguado",
+    "description": "Filé de linguado, acompanhado de purê, arroz e salada.",
+    "prices": [
+      73
+    ],
+    "note": "",
+    "image": "assets/terral-028.webp",
+    "imageKind": "source",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-028-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-028-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-028.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-028-view2-view-2.webp"
+  },
+  {
+    "id": "terral-029",
+    "category": "Pratos Terral",
+    "name": "Terral Mignon",
+    "description": "Filé na chapa, acompanhado de arroz, salada e feijão.",
+    "prices": [
+      75
+    ],
+    "note": "",
+    "image": "assets/terral-029.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-029.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-029-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-029-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-029.webp"
+  },
+  {
+    "id": "terral-030",
+    "category": "Pratos Terral",
+    "name": "Terral Pan (anchova ou salmão)",
+    "description": "Filé de peixe servido na chapa, com legumes em azeite e óleo de gergelim e arroz branco.",
+    "prices": [
+      95
+    ],
+    "note": "Escolha do peixe com a equipe: anchova ou salmão.",
+    "image": "assets/terral-030.webp",
+    "imageKind": "source",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Foto do cardápio Terral: opção com salmão.",
+    "images": [
+      {
+        "src": "assets/terral-030-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-030-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-030.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral: opção com salmão."
+      }
+    ],
+    "coverImage": "assets/terral-030-view2-view-2.webp"
+  },
+  {
+    "id": "terral-031",
+    "category": "Pratos Terral",
+    "name": "Moqueca de palmito vegana",
+    "description": "Moqueca de palmito, acompanhada de salada, farofa de banana e arroz.",
+    "prices": [
+      85
+    ],
+    "note": "",
+    "image": "assets/terral-031.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "serviceNote": "Troca de salada por fritas sem acréscimo. Troca de outros ingredientes: R$ 8,00. Combine com a equipe.",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-031.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-031-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-031-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-031.webp"
+  },
+  {
+    "id": "terral-032",
+    "category": "Pratos especiais",
+    "name": "Filé de peixe com molho",
+    "description": "Filé de peixe frito com molho de camarão e arroz.",
+    "prices": [
+      110,
+      180
+    ],
+    "note": "",
+    "image": "assets/terral-032.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-032.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-032-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-032-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-032.webp"
+  },
+  {
+    "id": "terral-033",
+    "category": "Pratos especiais",
+    "name": "Badejo na chapa",
+    "description": "Filé de peixe na chapa, alcaparras, batata soutê frita e arroz à grega.",
+    "prices": [
+      125,
+      210
+    ],
+    "note": "",
+    "image": "assets/terral-033.webp",
+    "imageKind": "source",
+    "portionLabel": "Inteira",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-033-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-033.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-033-view2-view-2.webp"
+  },
+  {
+    "id": "terral-034",
+    "category": "Pratos especiais",
+    "name": "Moqueca Terral",
+    "description": "Filé de peixe ao molho de tomate, azeite de dendê e leite de coco. Acompanha pirão e arroz.",
+    "prices": [
+      180,
+      240
+    ],
+    "note": "",
+    "image": "assets/terral-034.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-034.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-034-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-034.webp"
+  },
+  {
+    "id": "terral-035",
+    "category": "Pratos especiais",
+    "name": "Mignon à parmegiana",
+    "description": "Filé mignon à milanesa com molho de tomate e mussarela. Acompanha arroz.",
+    "prices": [
+      130,
+      200
+    ],
+    "note": "",
+    "image": "assets/terral-035.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-035.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-035-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-035.webp"
+  },
+  {
+    "id": "terral-036",
+    "category": "Pratos especiais",
+    "name": "Frango à parmegiana",
+    "description": "Filé de frango à milanesa com molho de tomate e mussarela. Acompanha arroz.",
+    "prices": [
+      115,
+      190
+    ],
+    "note": "",
+    "image": "assets/terral-036.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-036.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-036-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-036.webp"
+  },
+  {
+    "id": "terral-037",
+    "category": "Pratos especiais",
+    "name": "Camarão à Carmel",
+    "description": "Camarão grande com casca ao alho e óleo. Acompanha arroz à grega.",
+    "prices": [
+      160,
+      230
+    ],
+    "note": "",
+    "image": "assets/terral-037.webp",
+    "imageKind": "source",
+    "portionLabel": "Inteira",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-037-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-037.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-037-view2-view-2.webp"
+  },
+  {
+    "id": "terral-038",
+    "category": "Pratos especiais",
+    "name": "Bora-Bora com cambucu",
+    "description": "Filé de peixe na chapa, lula e camarão à dorê. Acompanha arroz.",
+    "prices": [
+      180,
+      260
+    ],
+    "note": "",
+    "image": "assets/terral-038.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-038.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-038-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-038.webp"
+  },
+  {
+    "id": "terral-039",
+    "category": "Pratos especiais",
+    "name": "Peixe gratinado",
+    "description": "Filé de peixe ao forno com molho de camarão e mussarela.",
+    "prices": [
+      115,
+      170
+    ],
+    "note": "",
+    "image": "assets/terral-039.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-039.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-039-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-039.webp"
+  },
+  {
+    "id": "terral-040",
+    "category": "Pratos especiais",
+    "name": "Badejo à parmegiana",
+    "description": "Filé de peixe à milanesa com molho de tomate e mussarela. Acompanha arroz.",
+    "prices": [
+      130,
+      190
+    ],
+    "note": "",
+    "image": "assets/terral-040.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-040.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-040-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-040.webp"
+  },
+  {
+    "id": "terral-041",
+    "category": "Pratos especiais",
+    "name": "Cambucu com legumes",
+    "description": "Filé de peixe na chapa, legumes na manteiga e arroz.",
+    "prices": [
+      155,
+      230
+    ],
+    "note": "",
+    "image": "assets/terral-041.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-041.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-041-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-041.webp"
+  },
+  {
+    "id": "terral-042",
+    "category": "Pratos especiais",
+    "name": "Risoto de frutos do mar",
+    "description": "Risoto com lula, camarão, marisco, peixe, açafrão, cebola e pimentão.",
+    "prices": [
+      180,
+      250
+    ],
+    "note": "",
+    "image": "assets/terral-042.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-042.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-042-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-042.webp"
+  },
+  {
+    "id": "terral-043",
+    "category": "Para compartilhar",
+    "name": "Tainha assada",
+    "description": "Peixe inteiro com molho de tomate, farofa de camarão e arroz.",
+    "prices": [
+      200
+    ],
+    "note": "",
+    "image": "assets/exec-a5e5b959-f7cb-48f7-b740-51f17c7229b9.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa criada com referência anatômica de tainha. Apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/exec-a5e5b959-f7cb-48f7-b740-51f17c7229b9.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa criada com referência anatômica de tainha. Apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/exec-0d09ab5c-1c54-4628-9104-7e774c747d42.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa criada com referência anatômica de tainha. Apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/exec-152675fa-15a3-44a8-ada0-24d83e59e544.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa criada com referência anatômica de tainha. Apresentação e porção podem variar."
+      }
+    ],
+    "coverImage": "assets/exec-a5e5b959-f7cb-48f7-b740-51f17c7229b9.webp"
+  },
+  {
+    "id": "terral-044",
+    "category": "Para compartilhar",
+    "name": "Bora-Bora",
+    "description": "Vermelho sioba inteiro frito, lula e camarão à dorê. Acompanha arroz.",
+    "prices": [
+      260
+    ],
+    "note": "",
+    "image": "assets/terral-044.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-044.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-044-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-044.webp"
+  },
+  {
+    "id": "terral-045",
+    "category": "Para compartilhar",
+    "name": "Polvo Terral",
+    "description": "Polvo ao azeite e alho, com batatas e arroz.",
+    "prices": [
+      305
+    ],
+    "note": "Encomendar com um dia de antecedência.",
+    "image": "assets/terral-045.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-045.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-045-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-045.webp"
+  },
+  {
+    "id": "terral-046",
+    "category": "Para compartilhar",
+    "name": "Caldeirada de frutos do mar",
+    "description": "Camarão, marisco, lula, polvo e isca de peixe ao molho de azeite de dendê e leite de coco. Acompanha pirão e arroz.",
+    "prices": [
+      290
+    ],
+    "note": "",
+    "image": "assets/terral-046.webp",
+    "imageKind": "source",
+    "portionLabel": "Inteira",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-046-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-046.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-046-view2-view-2.webp"
+  },
+  {
+    "id": "terral-047",
+    "category": "Massas",
+    "name": "Frutos do mar",
+    "description": "Molho de tomate, lula, camarão e marisco.",
+    "prices": [
+      95
+    ],
+    "note": "",
+    "image": "assets/terral-047.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "images": [
+      {
+        "src": "assets/terral-047.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-047-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-047.webp"
+  },
+  {
+    "id": "terral-048",
+    "category": "Massas",
+    "name": "Alho e óleo",
+    "description": "Alho e azeite.",
+    "prices": [
+      68
+    ],
+    "note": "",
+    "image": "assets/terral-048.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "images": [
+      {
+        "src": "assets/terral-048.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-048-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-048.webp"
+  },
+  {
+    "id": "terral-049",
+    "category": "Massas",
+    "name": "À bolonhesa",
+    "description": "Molho de tomate com carne moída.",
+    "prices": [
+      70
+    ],
+    "note": "",
+    "image": "assets/terral-049.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "images": [
+      {
+        "src": "assets/terral-049.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-049-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-049.webp"
+  },
+  {
+    "id": "terral-050",
+    "category": "Massas",
+    "name": "Ao sugo",
+    "description": "Molho de tomate.",
+    "prices": [
+      68
+    ],
+    "note": "",
+    "image": "assets/terral-050.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "images": [
+      {
+        "src": "assets/terral-050.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-050-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-050.webp"
+  },
+  {
+    "id": "terral-051",
+    "category": "Massas",
+    "name": "Camarão",
+    "description": "Molho de tomate e camarão.",
+    "prices": [
+      95
+    ],
+    "note": "",
+    "image": "assets/terral-051.webp",
+    "imageKind": "source",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-051-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-051.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-051-view2-view-2.webp"
+  },
+  {
+    "id": "terral-052",
+    "category": "Massas",
+    "name": "Amêndoa",
+    "description": "Molho branco com amêndoas.",
+    "prices": [
+      68
+    ],
+    "note": "",
+    "image": "assets/terral-052.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "images": [
+      {
+        "src": "assets/terral-052.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-052-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-052.webp"
+  },
+  {
+    "id": "terral-053",
+    "category": "Massas",
+    "name": "Na manteiga",
+    "description": "Massa na manteiga.",
+    "prices": [
+      68
+    ],
+    "note": "",
+    "image": "assets/terral-053.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "options": [
+      "Spaguetti",
+      "Penne",
+      "Fettuccine"
+    ],
+    "images": [
+      {
+        "src": "assets/terral-053.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-053-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-053.webp"
+  },
+  {
+    "id": "terral-054",
+    "category": "Guarnições",
+    "name": "Molho tártaro / rosê",
+    "description": "Duas opções de molho para acompanhar peixes, empanados e porções. Escolha entre tártaro e rosê.",
+    "prices": [
+      12
+    ],
+    "note": "Consulte a equipe sobre os ingredientes de cada molho.",
+    "image": "assets/terral-054.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-054.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção molho tártaro."
+      },
+      {
+        "src": "assets/terral-054-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-054-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa da opção molho tártaro.",
+    "coverImage": "assets/terral-054.webp"
+  },
+  {
+    "id": "terral-055",
+    "category": "Guarnições",
+    "name": "Alcaparras",
+    "description": "Alcaparras servidas à parte, para acrescentar um toque salgado e marcante ao seu prato.",
+    "prices": [
+      14
+    ],
+    "note": "",
+    "image": "assets/terral-055.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-055.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-055-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-055-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-055.webp"
+  },
+  {
+    "id": "terral-056",
+    "category": "Guarnições",
+    "name": "Arroz individual",
+    "description": "Arroz servido à parte em porção individual, para complementar sua refeição.",
+    "prices": [
+      12
+    ],
+    "note": "",
+    "image": "assets/terral-056-view2-view-2.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Individual",
+    "images": [
+      {
+        "src": "assets/terral-056-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação pode variar.",
+    "coverImage": "assets/terral-056-view2-view-2.webp"
+  },
+  {
+    "id": "terral-057",
+    "category": "Guarnições",
+    "name": "Arroz porção",
+    "description": "Arroz servido à parte. Escolha entre meia porção e porção inteira.",
+    "prices": [
+      18,
+      30
+    ],
+    "note": "",
+    "image": "assets/terral-056-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-056-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-056.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação pode variar.",
+    "coverImage": "assets/terral-056-view3-view-3.webp"
+  },
+  {
+    "id": "terral-058",
+    "category": "Guarnições",
+    "name": "Arroz à grega",
+    "description": "Arroz preparado com vegetais e servido à parte. Disponível em meia porção ou inteira.",
+    "prices": [
+      28,
+      35
+    ],
+    "note": "Consulte a equipe sobre os ingredientes do arroz à grega da casa.",
+    "image": "assets/terral-058.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-058.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-058-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-058-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-058.webp"
+  },
+  {
+    "id": "terral-059",
+    "category": "Guarnições",
+    "name": "Feijão",
+    "description": "Feijão servido à parte, para acompanhar sua refeição.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-059.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-059.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-059-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-059-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-059.webp"
+  },
+  {
+    "id": "terral-060",
+    "category": "Guarnições",
+    "name": "Molho de camarão",
+    "description": "Molho com camarões, servido à parte para complementar o prato de sua escolha.",
+    "prices": [
+      40
+    ],
+    "note": "Consulte a equipe sobre a composição do molho.",
+    "image": "assets/terral-060.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-060.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-060-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-060-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-060.webp"
+  },
+  {
+    "id": "terral-061",
+    "category": "Guarnições",
+    "name": "Batata sauté",
+    "description": "Batatas salteadas, servidas como acompanhamento.",
+    "prices": [
+      30
+    ],
+    "note": "Consulte a equipe sobre o preparo da casa.",
+    "image": "assets/terral-061.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-061.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-061-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-061-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-061.webp"
+  },
+  {
+    "id": "terral-062",
+    "category": "Guarnições",
+    "name": "Purê",
+    "description": "Purê de textura cremosa, servido à parte. Escolha meia porção ou inteira.",
+    "prices": [
+      28,
+      35
+    ],
+    "note": "Consulte a equipe sobre a composição do purê.",
+    "image": "assets/terral-062.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-062.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-062-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-062-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-062.webp"
+  },
+  {
+    "id": "terral-063",
+    "category": "Guarnições",
+    "name": "Legumes",
+    "description": "Acompanhamento de legumes, em meia porção ou porção inteira.",
+    "prices": [
+      28,
+      35
+    ],
+    "note": "Confira com a equipe a seleção de legumes disponível.",
+    "image": "assets/terral-063.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Inteira",
+    "images": [
+      {
+        "src": "assets/terral-063.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; a seleção de legumes pode variar."
+      },
+      {
+        "src": "assets/terral-063-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-063-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; a seleção de legumes pode variar.",
+    "coverImage": "assets/terral-063.webp"
+  },
+  {
+    "id": "terral-064",
+    "category": "Filés extra",
+    "name": "Merluza",
+    "description": "Filé extra de merluza.",
+    "prices": [
+      28
+    ],
+    "note": "",
+    "image": "assets/terral-064.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-064.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-064-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-064.webp"
+  },
+  {
+    "id": "terral-065",
+    "category": "Filés extra",
+    "name": "Filé de frango",
+    "description": "Filé extra de frango.",
+    "prices": [
+      30
+    ],
+    "note": "",
+    "image": "assets/terral-065.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-065.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-065-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-065.webp"
+  },
+  {
+    "id": "terral-066",
+    "category": "Filés extra",
+    "name": "Contrafilé",
+    "description": "Porção extra de contrafilé.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-066.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-066.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-066-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-066.webp"
+  },
+  {
+    "id": "terral-067",
+    "category": "Filés extra",
+    "name": "Carne desfiada",
+    "description": "Porção extra de carne desfiada.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-067.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-067.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-067-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-067.webp"
+  },
+  {
+    "id": "terral-068",
+    "category": "Filés extra",
+    "name": "Salmão",
+    "description": "Filé extra de salmão.",
+    "prices": [
+      33
+    ],
+    "note": "",
+    "image": "assets/terral-068.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-068.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-068-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-068.webp"
+  },
+  {
+    "id": "terral-069",
+    "category": "Filés extra",
+    "name": "Badejo",
+    "description": "Filé extra de badejo.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-069.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-069.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-069-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-069.webp"
+  },
+  {
+    "id": "terral-070",
+    "category": "Filés extra",
+    "name": "Linguado",
+    "description": "Filé extra de linguado.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-070.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-070.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-070-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-070.webp"
+  },
+  {
+    "id": "terral-071",
+    "category": "Filés extra",
+    "name": "Mignon",
+    "description": "Filé extra de mignon.",
+    "prices": [
+      40
+    ],
+    "note": "",
+    "image": "assets/terral-071.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Item extra. Confirme o preparo e o tamanho com a equipe.",
+    "images": [
+      {
+        "src": "assets/terral-071.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-071-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-071.webp"
+  },
+  {
+    "id": "terral-072",
+    "category": "Sobremesas",
+    "name": "Brigadeiro Terral",
+    "description": "Brigadeiro Terral.",
+    "prices": [
+      15
+    ],
+    "note": "",
+    "image": "assets/terral-072.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-072.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-072-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-072.webp"
+  },
+  {
+    "id": "terral-073",
+    "category": "Sobremesas",
+    "name": "Mousse da Dai",
+    "description": "Mousse de chocolate com textura leve e cremosa.",
+    "prices": [
+      22
+    ],
+    "note": "Sabor de chocolate sugerido para esta versão do cardápio. Confirme a disponibilidade com a equipe.",
+    "image": "assets/terral-073-chocolate.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-073-chocolate.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da sugestão de sabor de chocolate."
+      },
+      {
+        "src": "assets/terral-073-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da sugestão de sabor de chocolate."
+      }
+    ],
+    "recipeProposal": true,
+    "imageNote": "Imagem ilustrativa da sugestão de sabor de chocolate.",
+    "coverImage": "assets/terral-073-chocolate.webp"
+  },
+  {
+    "id": "terral-074",
+    "category": "Sobremesas",
+    "name": "Doce de banana",
+    "description": "Doce de banana.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-074.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-074.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-074-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-074.webp"
+  },
+  {
+    "id": "terral-075",
+    "category": "Sobremesas",
+    "name": "Pudim da casa",
+    "description": "Pudim da casa.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-075.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-075.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-075-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-075.webp"
+  },
+  {
+    "id": "terral-076",
+    "category": "Sobremesas",
+    "name": "Trufa da Vó Mirtes",
+    "description": "Casquinha de chocolate com recheio cremoso de ganache de chocolate.",
+    "prices": [
+      17
+    ],
+    "note": "Recheio de ganache sugerido para esta versão do cardápio. Confirme a disponibilidade com a equipe.",
+    "image": "assets/terral-076.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-076.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da sugestão de sabor de chocolate."
+      },
+      {
+        "src": "assets/terral-076-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da sugestão de sabor de chocolate."
+      }
+    ],
+    "recipeProposal": true,
+    "imageNote": "Imagem ilustrativa da sugestão de sabor de chocolate.",
+    "coverImage": "assets/terral-076.webp"
+  },
+  {
+    "id": "terral-077",
+    "category": "Sobremesas",
+    "name": "Torta de limão",
+    "description": "Torta de limão.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-077.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-077.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-077-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-077.webp"
+  },
+  {
+    "id": "terral-078",
+    "category": "Sobremesas",
+    "name": "Pavê",
+    "description": "Camadas de creme de chocolate e baunilha, intercaladas com biscoitos.",
+    "prices": [
+      25
+    ],
+    "note": "Sabor de chocolate com baunilha sugerido para esta versão do cardápio. Confirme a disponibilidade com a equipe.",
+    "image": "assets/terral-078.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-078.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da sugestão de sabor de chocolate."
+      },
+      {
+        "src": "assets/terral-078-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da sugestão de sabor de chocolate."
+      }
+    ],
+    "recipeProposal": true,
+    "imageNote": "Imagem ilustrativa da sugestão de sabor de chocolate.",
+    "coverImage": "assets/terral-078.webp"
+  },
+  {
+    "id": "terral-079",
+    "category": "Sobremesas",
+    "name": "Torta de doce de leite",
+    "description": "Torta de doce de leite.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-079.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "imageNote": "Foto do cardápio Terral: torta de doce de leite em primeiro plano.",
+    "images": [
+      {
+        "src": "assets/terral-079-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-079.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral: torta de doce de leite em primeiro plano."
+      }
+    ],
+    "coverImage": "assets/terral-079-view2-view-2.webp"
+  },
+  {
+    "id": "terral-080",
+    "category": "Sobremesas",
+    "name": "Torta de banana / holandesa",
+    "description": "Escolha entre torta de banana e torta holandesa.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-080.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "serviceNote": "Consulte a equipe sobre ingredientes e disponibilidade.",
+    "images": [
+      {
+        "src": "assets/terral-080.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção torta de banana."
+      },
+      {
+        "src": "assets/terral-080-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada; apresentação pode variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa da opção torta de banana.",
+    "coverImage": "assets/terral-080.webp"
+  },
+  {
+    "id": "terral-081",
+    "category": "Drinks",
+    "name": "Caipirinha",
+    "description": "Caipirinha.",
+    "prices": [
+      28
+    ],
+    "note": "Consulte as frutas disponíveis.",
+    "image": "assets/terral-081-view2-view-2.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-081-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-081.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-081-view2-view-2.webp",
+    "imageNote": "Imagem ilustrativa; apresentação pode variar."
+  },
+  {
+    "id": "terral-082",
+    "category": "Drinks",
+    "name": "Caipirosca / caipiríssima / saquerita",
+    "description": "Escolha entre caipirosca, caipiríssima e saquerita.",
+    "prices": [
+      32
+    ],
+    "note": "Consulte as frutas e a composição de cada opção.",
+    "image": "assets/terral-081-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-081-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-081-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa; apresentação pode variar."
+  },
+  {
+    "id": "terral-083",
+    "category": "Drinks",
+    "name": "Batida de pinga",
+    "description": "Batida de pinga.",
+    "prices": [
+      29
+    ],
+    "note": "Consulte os sabores e a composição.",
+    "image": "assets/terral-083.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-083.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa de batida cremosa; confirme o sabor."
+      },
+      {
+        "src": "assets/terral-083-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-083.webp",
+    "imageNote": "Imagem ilustrativa de batida cremosa; confirme o sabor."
+  },
+  {
+    "id": "terral-084",
+    "category": "Drinks",
+    "name": "Batida de vodka",
+    "description": "Batida de vodka.",
+    "prices": [
+      32
+    ],
+    "note": "Consulte os sabores e a composição.",
+    "image": "assets/terral-083-view2-view-2.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-083-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      }
+    ],
+    "coverImage": "assets/terral-083-view2-view-2.webp",
+    "imageNote": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+  },
+  {
+    "id": "terral-085",
+    "category": "Drinks",
+    "name": "Drink Terral",
+    "description": "Caipirinha de rum, amora, maracujá e lima da pérsia.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-085.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-085.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-085-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-085-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-085.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-086",
+    "category": "Drinks",
+    "name": "Dry Martini",
+    "description": "Gin e vermouth.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-086.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-086.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-086-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-086-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-086.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-087",
+    "category": "Drinks",
+    "name": "Azul Merlin",
+    "description": "Vodka, curaçau blue, suco de limão e água com gás.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-087.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-087.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-087-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-087-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-087.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-088",
+    "category": "Drinks",
+    "name": "Sônia Braga",
+    "description": "Cachaça Gabriela, maracujá e limão siciliano.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-088.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-088-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-088-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-088.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-088-view2-view-2.webp"
+  },
+  {
+    "id": "terral-089",
+    "category": "Drinks",
+    "name": "Piña Colada",
+    "description": "Rum, leite de coco, leite condensado e abacaxi.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-089.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-089.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-089-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-089-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-089.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-090",
+    "category": "Drinks",
+    "name": "Sex on the Beach",
+    "description": "Vodka, licor de pêssego e suco de laranja.",
+    "prices": [
+      40
+    ],
+    "note": "",
+    "image": "assets/terral-090.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-090-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-090-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-090.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-090-view2-view-2.webp"
+  },
+  {
+    "id": "terral-091",
+    "category": "Drinks",
+    "name": "Negroni",
+    "description": "Gin e vermouth, conforme descrito no cardápio.",
+    "prices": [
+      40
+    ],
+    "note": "Consulte a composição completa com a equipe.",
+    "image": "assets/terral-091.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-091.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa de Negroni; confirme a composição com a equipe."
+      },
+      {
+        "src": "assets/terral-091-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-091-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-091.webp",
+    "imageNote": "Imagem ilustrativa de Negroni; confirme a composição com a equipe."
+  },
+  {
+    "id": "terral-092",
+    "category": "Drinks",
+    "name": "Gin tônica",
+    "description": "Gin tônica. Monte como preferir: zimbro, hibisco, anis ou cardamomo.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-092.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-092.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção com zimbro."
+      },
+      {
+        "src": "assets/terral-092-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-092-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-092.webp",
+    "imageNote": "Imagem ilustrativa da opção com zimbro."
+  },
+  {
+    "id": "terral-093",
+    "category": "Drinks",
+    "name": "Tarsila do Amaral",
+    "description": "Lambrusco, licor de pêssego, cereja e lascas de limão siciliano.",
+    "prices": [
+      40
+    ],
+    "note": "",
+    "image": "assets/terral-093.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-093.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-093-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-093-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-093.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-094",
+    "category": "Drinks",
+    "name": "Moscow Mule",
+    "description": "Xarope de gengibre, suco de limão, vodka, água com gás e espuma de gengibre.",
+    "prices": [
+      40
+    ],
+    "note": "",
+    "image": "assets/terral-094.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-094-view2-view-2.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da bebida; sabor e apresentação podem variar."
+      },
+      {
+        "src": "assets/terral-094-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-094.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-094-view2-view-2.webp"
+  },
+  {
+    "id": "terral-095",
+    "category": "Drinks",
+    "name": "Aperol Spritz",
+    "description": "Aperol, brut e água com gás.",
+    "prices": [
+      40
+    ],
+    "note": "",
+    "image": "assets/terral-095.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-095.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-095-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-095.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-096",
+    "category": "Drinks",
+    "name": "Margarita",
+    "description": "Tequila, cointreau e suco de limão.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-096.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-096.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-096-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-096.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-097",
+    "category": "Drinks",
+    "name": "Mojito",
+    "description": "Rum, limão, hortelã e soda ou água com gás.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-097.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-097-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-097.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-097-view3-view-3.webp"
+  },
+  {
+    "id": "terral-098",
+    "category": "Drinks",
+    "name": "Soraia",
+    "description": "Vodka, xarope de pera, espumante e suco de limão.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-098.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-098.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-098-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-098.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-099",
+    "category": "Drinks",
+    "name": "Tequila Sunrise",
+    "description": "Tequila, grenadine e suco de laranja.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-099.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-099.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-099-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-099.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-100",
+    "category": "Drinks",
+    "name": "Cosmopolitan",
+    "description": "Vodka, cointreau, xarope de cranberry e suco de limão.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-100.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-100.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-100-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-100.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-101",
+    "category": "Drinks",
+    "name": "Hifi",
+    "description": "Vodka e suco de laranja.",
+    "prices": [
+      38
+    ],
+    "note": "",
+    "image": "assets/terral-101.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-101.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-101-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-101.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-102",
+    "category": "Drinks",
+    "name": "Rabo de Galo",
+    "description": "Cachaça e Cynar.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-102.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-102.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-102-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-102.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-103",
+    "category": "Drinks",
+    "name": "Sangria / clericot (jarra)",
+    "description": "Maçã, uva, abacaxi, laranja, cravo, lambrusco, gin, cointreau e soda.",
+    "prices": [
+      100
+    ],
+    "note": "Consulte a composição de cada opção com a equipe.",
+    "image": "assets/terral-103.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Jarra",
+    "images": [
+      {
+        "src": "assets/terral-103.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção sangria."
+      },
+      {
+        "src": "assets/terral-103-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-103.webp",
+    "imageNote": "Imagem ilustrativa da opção sangria."
+  },
+  {
+    "id": "terral-104",
+    "category": "Bebidas",
+    "name": "Sucos",
+    "description": "Laranja, limão, abacaxi, melancia, cenoura, açaí, mamão, melão, morango, acerola, cajá-manga, maracujá ou cambuci.",
+    "prices": [
+      18
+    ],
+    "note": "Acréscimo de leite, uma ou mais frutas: R$ 5,00, conforme o cardápio. Confirme a combinação com a equipe.",
+    "image": "assets/terral-104.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Foto do cardápio Terral: suco de laranja.",
+    "images": [
+      {
+        "src": "assets/terral-104-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      },
+      {
+        "src": "assets/terral-104.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral: suco de laranja."
+      }
+    ],
+    "coverImage": "assets/terral-104-view3-view-3.webp"
+  },
+  {
+    "id": "terral-105",
+    "category": "Bebidas",
+    "name": "Refrigerante",
+    "description": "Coca-Cola, Guaraná, Sukita, Coca-Cola Zero, Guaraná Zero, Schweppes Citrus, H2O ou tônica.",
+    "prices": [
+      10
+    ],
+    "note": "",
+    "image": "assets/terral-105.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-105.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção cola; consulte a marca/opção."
+      },
+      {
+        "src": "assets/terral-105-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      }
+    ],
+    "coverImage": "assets/terral-105.webp",
+    "imageNote": "Imagem ilustrativa da opção cola; consulte a marca/opção."
+  },
+  {
+    "id": "terral-106",
+    "category": "Bebidas",
+    "name": "Água natural",
+    "description": "Água sem gás.",
+    "prices": [
+      8
+    ],
+    "note": "",
+    "image": "assets/terral-106.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-106.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-106-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-106.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-107",
+    "category": "Bebidas",
+    "name": "Água com gás",
+    "description": "Água com gás.",
+    "prices": [
+      10
+    ],
+    "note": "",
+    "image": "assets/terral-107.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-107.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      },
+      {
+        "src": "assets/terral-107-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-107.webp",
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar."
+  },
+  {
+    "id": "terral-108",
+    "category": "Bebidas",
+    "name": "Ice Tea pêssego ou limão",
+    "description": "Chá gelado. Escolha entre pêssego e limão.",
+    "prices": [
+      10
+    ],
+    "note": "",
+    "image": "assets/terral-108.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-108.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da opção chá de limão."
+      },
+      {
+        "src": "assets/terral-108-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      }
+    ],
+    "coverImage": "assets/terral-108.webp",
+    "imageNote": "Imagem ilustrativa da opção chá de limão."
+  },
+  {
+    "id": "terral-109",
+    "category": "Bebidas",
+    "name": "Red Bull",
+    "description": "Energy Drink, Sugar Free, Tropical ou Melancia.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-109.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-109.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa da categoria; consulte a marca/opção."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa da categoria; consulte a marca/opção.",
+    "coverImage": "assets/terral-109.webp"
+  },
+  {
+    "id": "terral-110",
+    "category": "Bebidas",
+    "name": "Café",
+    "description": "Café.",
+    "prices": [
+      8
+    ],
+    "note": "",
+    "image": "assets/terral-110.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-110.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa; apresentação e porção podem variar."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa; apresentação e porção podem variar.",
+    "coverImage": "assets/terral-110.webp"
+  },
+  {
+    "id": "terral-111",
+    "category": "Cervejas",
+    "name": "Brahma 600 ml",
+    "description": "Cerveja Brahma. Garrafa de 600 ml.",
+    "prices": [
+      22
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-112",
+    "category": "Cervejas",
+    "name": "Original / Serramalte / Estrela Galícia / Bohemia / Therezópolis Gold 600 ml",
+    "description": "Escolha a marca disponível. Garrafa de 600 ml.",
+    "prices": [
+      23
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-113",
+    "category": "Cervejas",
+    "name": "Heineken long neck",
+    "description": "Cerveja Heineken. Garrafa long neck.",
+    "prices": [
+      14
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-114",
+    "category": "Cervejas",
+    "name": "Cerpa long neck",
+    "description": "Cerveja Cerpa. Garrafa long neck.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-115",
+    "category": "Cervejas",
+    "name": "Estrela Galícia long neck",
+    "description": "Cerveja Estrela Galícia. Garrafa long neck.",
+    "prices": [
+      17
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-116",
+    "category": "Cervejas",
+    "name": "Malzbier long neck",
+    "description": "Cerveja Malzbier. Garrafa long neck.",
+    "prices": [
+      15
+    ],
+    "note": "",
+    "image": "assets/terral-120-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-120-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa de cerveja escura servida no copo. Consulte a apresentação informada na descrição."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa de cerveja escura servida no copo. Consulte a apresentação informada na descrição.",
+    "coverImage": "assets/terral-120-view3-view-3.webp"
+  },
+  {
+    "id": "terral-117",
+    "category": "Cervejas",
+    "name": "Skol lata",
+    "description": "Cerveja Skol. Lata.",
+    "prices": [
+      12
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-118",
+    "category": "Cervejas",
+    "name": "Heineken Zero lata",
+    "description": "Cerveja Heineken Zero. Lata.",
+    "prices": [
+      14
+    ],
+    "note": "",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-119",
+    "category": "Artesanais Terral",
+    "name": "Pilsen",
+    "description": "Lager clara e dourada, produzida no Terral. Malte de cevada pilsen da Agrária, lúpulo tcheco e lúpulo aromático alemão. Leve amargor e final seco e aromático. Fermentação baixa com fermento Fermentis.",
+    "prices": [
+      15
+    ],
+    "note": "Copo de 300 ml. Teor alcoólico: 5%.",
+    "image": "assets/cervejas/copo-pilsen.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Copo · 300 ml",
+    "images": [
+      {
+        "src": "assets/cervejas/copo-pilsen.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo."
+      }
+    ],
+    "imageNote": "Imagem ilustrativa. A cerveja chega na apresentação do cardápio (garrafa, long neck ou lata) e é servida no copo.",
+    "coverImage": "assets/cervejas/copo-pilsen.webp"
+  },
+  {
+    "id": "terral-120",
+    "category": "Artesanais Terral",
+    "name": "Porter",
+    "description": "Cerveja escura e leve, produzida no Terral. Maltes torrados que remetem a café e chocolate, com reflexos rubi.",
+    "prices": [
+      15
+    ],
+    "note": "Copo de 300 ml. Teor alcoólico: 6,3%.",
+    "image": "assets/terral-120-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Copo · 300 ml",
+    "images": [
+      {
+        "src": "assets/terral-120-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-120-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-121",
+    "category": "Artesanais Terral",
+    "name": "Weiss",
+    "description": "Weissbier tradicional alemã, produzida no Terral. 50% de malte de trigo; demais maltes de cevada pilsen, carared e munich. Aroma suave de banana, final de cravo e lúpulos alemães.",
+    "prices": [
+      15
+    ],
+    "note": "Copo de 300 ml. Teor alcoólico: 4,5%.",
+    "image": "assets/terral-121-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Copo · 300 ml",
+    "images": [
+      {
+        "src": "assets/terral-121-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-121-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-122",
+    "category": "Artesanais Terral",
+    "name": "IPA",
+    "description": "Indian Pale Ale inglesa, produzida no Terral. Intensa, de forte amargor, cor acobreada e teor alcoólico mais elevado.",
+    "prices": [
+      18
+    ],
+    "note": "Copo de 300 ml. Teor alcoólico: 8,4%.",
+    "image": "assets/terral-122-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Copo · 300 ml",
+    "images": [
+      {
+        "src": "assets/terral-122-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-122-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-123",
+    "category": "Shots e doses",
+    "name": "Whisky 8 anos",
+    "description": "Dose de whisky 8 anos.",
+    "prices": [
+      32
+    ],
+    "note": "",
+    "image": "assets/terral-123-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-123-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-123-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-124",
+    "category": "Shots e doses",
+    "name": "Whisky 12 anos",
+    "description": "Dose de whisky 12 anos.",
+    "prices": [
+      40
+    ],
+    "note": "",
+    "image": "assets/terral-123-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-123-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-123-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-125",
+    "category": "Shots e doses",
+    "name": "Campari",
+    "description": "Dose de Campari.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-125-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-125-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-125-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-126",
+    "category": "Shots e doses",
+    "name": "Steinhäger",
+    "description": "Dose de Steinhäger.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-127",
+    "category": "Shots e doses",
+    "name": "Domecq",
+    "description": "Dose de Domecq.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-127-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-127-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-127-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-128",
+    "category": "Shots e doses",
+    "name": "Licor",
+    "description": "Cointreau, Amarula ou creme de cassis.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-128-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-128-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      }
+    ],
+    "coverImage": "assets/terral-128-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+  },
+  {
+    "id": "terral-129",
+    "category": "Shots e doses",
+    "name": "Martini",
+    "description": "Doce ou seco.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-129-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-129-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      }
+    ],
+    "coverImage": "assets/terral-129-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+  },
+  {
+    "id": "terral-130",
+    "category": "Shots e doses",
+    "name": "Rum",
+    "description": "Prata ou ouro.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-131",
+    "category": "Shots e doses",
+    "name": "Tequila",
+    "description": "José Cuervo prata ou ouro.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-132",
+    "category": "Shots e doses",
+    "name": "Vodka Absolut",
+    "description": "Dose de vodka Absolut.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-133",
+    "category": "Shots e doses",
+    "name": "Vodka Smirnoff",
+    "description": "Dose de vodka Smirnoff.",
+    "prices": [
+      20
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-134",
+    "category": "Shots e doses",
+    "name": "Gin Seagers",
+    "description": "Dose de gin Seagers.",
+    "prices": [
+      25
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-135",
+    "category": "Shots e doses",
+    "name": "Gin Tanqueray",
+    "description": "Dose de gin Tanqueray.",
+    "prices": [
+      30
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-136",
+    "category": "Shots e doses",
+    "name": "Gin Gordon’s",
+    "description": "Dose de gin Gordon’s.",
+    "prices": [
+      26
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-137",
+    "category": "Shots e doses",
+    "name": "Cachaça Sagatiba",
+    "description": "Dose de cachaça Sagatiba.",
+    "prices": [
+      15
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-138",
+    "category": "Shots e doses",
+    "name": "Cachaça Velho Barreiro",
+    "description": "Dose de cachaça Velho Barreiro.",
+    "prices": [
+      9
+    ],
+    "note": "",
+    "image": "assets/terral-126-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-126-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-126-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-139",
+    "category": "Shots e doses",
+    "name": "Pinga especial do cambuci",
+    "description": "Dose de pinga especial do cambuci.",
+    "prices": [
+      12
+    ],
+    "note": "",
+    "image": "assets/terral-139-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-139-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      }
+    ],
+    "coverImage": "assets/terral-139-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+  },
+  {
+    "id": "terral-140",
+    "category": "Shots e doses",
+    "name": "Pinga especial do carvalho",
+    "description": "Dose de pinga especial do carvalho.",
+    "prices": [
+      12
+    ],
+    "note": "",
+    "image": "assets/terral-140-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Dose",
+    "images": [
+      {
+        "src": "assets/terral-140-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-140-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-141",
+    "category": "Vinhos",
+    "name": "Vinhos",
+    "description": "Consulte a carta de vinhos com a equipe para conhecer rótulos e preços.",
+    "prices": [],
+    "note": "",
+    "image": "assets/terral-141.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Imagem de vinho presente no cardápio; consulte os rótulos disponíveis.",
+    "images": [
+      {
+        "src": "assets/terral-141-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar. Opção ilustrativa; confirme a opção e composição com a equipe."
+      },
+      {
+        "src": "assets/terral-141.webp",
+        "kind": "source",
+        "note": "Imagem de vinho presente no cardápio; consulte os rótulos disponíveis."
+      }
+    ],
+    "coverImage": "assets/terral-141-view3-view-3.webp"
+  },
+  {
+    "id": "terral-142",
+    "category": "Gin e Red Bull",
+    "name": "Tropical Gin",
+    "description": "Gin e Red Bull Tropical.",
+    "prices": [
+      42
+    ],
+    "note": "",
+    "image": "assets/terral-142-view3-view-3.webp",
+    "imageKind": "illustrative",
+    "portionLabel": "Preço",
+    "images": [
+      {
+        "src": "assets/terral-142-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      }
+    ],
+    "coverImage": "assets/terral-142-view3-view-3.webp",
+    "imageNote": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+  },
+  {
+    "id": "terral-143",
+    "category": "Gin e Red Bull",
+    "name": "Melancita",
+    "description": "Gin e Red Bull Melancia.",
+    "prices": [
+      42
+    ],
+    "note": "",
+    "image": "assets/terral-143.webp",
+    "imageKind": "source",
+    "portionLabel": "Preço",
+    "imageNote": "Foto do cardápio Terral.",
+    "images": [
+      {
+        "src": "assets/terral-143-view3-view-3.webp",
+        "kind": "illustrative",
+        "note": "Imagem ilustrativa gerada por IA; apresentação pode variar."
+      },
+      {
+        "src": "assets/terral-143.webp",
+        "kind": "source",
+        "note": "Foto do cardápio Terral."
+      }
+    ],
+    "coverImage": "assets/terral-143-view3-view-3.webp"
+  }
+]

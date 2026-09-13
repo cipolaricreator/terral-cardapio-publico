@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b2220">
+  <title>Terral Maresias | Cardápio e pedidos</title>
+  <meta name="description" content="Cardápio do Terral Maresias: pratos, petiscos, drinks e cervejas. Faça seu pedido pelo celular e pague com PIX ou cartão.">
+  <meta property="og:title" content="Terral Maresias | Cardápio">
+  <meta property="og:description" content="Sabores de Maresias desde 1987. Veja o cardápio e faça seu pedido.">
+  <meta property="og:image" content="assets/marca/terral-social.jpg">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/marca/icon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/marca/icon-32.png">
+  <link rel="apple-touch-icon" href="assets/marca/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+  <link rel="preload" as="image" href="assets/ambiente/fachada-sm.webp" imagesrcset="assets/ambiente/fachada-sm.webp 760w, assets/ambiente/fachada.webp 1350w" imagesizes="100vw">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#menu">Ir para o cardápio</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Terral Maresias, voltar ao início"><img src="assets/marca/terral-logo-branco-sm.webp" srcset="assets/marca/terral-logo-branco-sm.webp 320w, assets/marca/terral-logo-branco.webp 1000w" sizes="150px" alt="Terral Maresias" width="320" height="182"></a>
+    <nav class="top-actions" aria-label="Links principais">
+      <a href="#menu" class="top-link hide-sm">Cardápio</a>
+      <a href="#bar" class="top-link hide-sm">O Bar</a>
+      <button type="button" class="top-link" data-dialog="story">Nossa casa</button>
+      <button type="button" class="top-cart" data-open-cart aria-label="Abrir sacola">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="top-cart-count" data-cart-count hidden>0</span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <img class="hero-bg" src="assets/ambiente/fachada-sm.webp" srcset="assets/ambiente/fachada-sm.webp 760w, assets/ambiente/fachada.webp 1350w" sizes="100vw" alt="Fachada do Terral à noite, com a estrutura de bambu iluminada" fetchpriority="high">
+    <div class="hero-content">
+      <p class="hero-kicker">Restaurante &amp; Bar · Maresias</p>
+      <h1>Sabores de <em>Maresias</em></h1>
+      <p class="hero-lead">Cozinha do mar, drinks da casa e cervejas feitas aqui, desde 1987. Escolha e peça direto pelo celular.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-cream">Ver o cardápio</a>
+        <a href="#bar" class="hero-link">Conheça o bar <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <div class="hero-bar">
+      <div class="hero-bar-inner">
+        <span>Av. Francisco Loup, 926 · Maresias, SP</span>
+        <a href="tel:+551238656488">(12) 3865-6488</a>
+        <a href="#menu" class="hero-scroll">Cardápio <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="catbar" id="catbar">
+    <div class="catbar-inner">
+      <nav class="cats" id="cats" aria-label="Categorias do cardápio"><span class="cat-ind" aria-hidden="true"></span></nav>
+      <button type="button" class="icon-btn" id="search-jump" aria-label="Buscar no cardápio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+      </button>
+    </div>
+    <span class="progress" aria-hidden="true"></span>
+  </div>
+
+  <main id="menu" tabindex="-1">
+    <div class="zone zone-kitchen" id="cozinha">
+      <div class="zone-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="waves"></span></div>
+      <div class="zone-inner">
+        <div class="menu-intro">
+          <div>
+            <p class="eyebrow">Cardápio</p>
+            <h2 class="menu-title">O que vai ser <em>hoje?</em></h2>
+          </div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+            <span class="sr-only">Buscar no cardápio</span>
+            <input id="search" type="search" placeholder="Buscar prato, drink, ingrediente…" autocomplete="off" enterkeyhint="search">
+            <button type="button" class="search-clear" id="search-clear" aria-label="Limpar busca" hidden>×</button>
+          </label>
+        </div>
+        <p class="search-status" id="search-status" aria-live="polite"></p>
+
+        <section class="featured" id="featured" aria-labelledby="featured-title">
+          <div class="featured-head">
+            <div><p class="eyebrow">Escolhas da casa</p><h2 id="featured-title">Destaques do Terral</h2></div>
+            <div class="featured-arrows">
+              <button type="button" class="icon-btn" data-featured="-1" aria-label="Destaques anteriores">‹</button>
+              <button type="button" class="icon-btn" data-featured="1" aria-label="Próximos destaques">›</button>
+            </div>
+          </div>
+          <div class="featured-row" id="featured-row"></div>
+        </section>
+
+        <section class="casa" aria-labelledby="casa-title">
+          <div class="casa-head">
+            <div><p class="eyebrow">A casa</p><h2 id="casa-title" class="split-title">Um pedaço de Maresias, <em>desde 1987</em></h2></div>
+            <a class="casa-link" href="https://www.instagram.com/terral.maresias/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" class="dot"/></svg>Mais fotos no Instagram</a>
+          </div>
+          <div class="casa-grid">
+            <figure class="casa-item big" style="--ci:0"><img src="assets/casa/salao-rede-sm.webp" srcset="assets/casa/salao-rede-sm.webp 640w, assets/casa/salao-rede.webp 1080w" sizes="(max-width: 720px) 90vw, 40vw" alt="Salão do Terral com rede, árvores e mesas de madeira" loading="lazy"><figcaption>O salão</figcaption></figure>
+            <figure class="casa-item tall" style="--ci:1"><img src="assets/casa/entrada-aloha-sm.webp" srcset="assets/casa/entrada-aloha-sm.webp 640w, assets/casa/entrada-aloha.webp 1080w" sizes="(max-width: 720px) 90vw, 40vw" alt="Entrada do Terral com a placa Aloha" loading="lazy"><figcaption>A entrada</figcaption></figure>
+            <figure class="casa-item" style="--ci:2"><img src="assets/casa/pranchas-sm.webp" srcset="assets/casa/pranchas-sm.webp 640w, assets/casa/pranchas.webp 1080w" sizes="(max-width: 720px) 90vw, 40vw" alt="Parede decorada com pranchas de surfe" loading="lazy"><figcaption>Parede das pranchas</figcaption></figure>
+            <figure class="casa-item" style="--ci:3"><img src="assets/casa/drink-mesa-sm.webp" srcset="assets/casa/drink-mesa-sm.webp 640w, assets/casa/drink-mesa.webp 1080w" sizes="(max-width: 720px) 90vw, 40vw" alt="Drink com laranja na mesa, com flores ao fundo" loading="lazy"><figcaption>Na mesa</figcaption></figure>
+          </div>
+        </section>
+
+        <div id="kitchen-sections" aria-busy="true">
+          <div class="skeleton-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="zone zone-bar" id="bar">
+      <svg class="zone-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v48c-120 26-260 58-420 50C840 88 720 30 540 30S220 92 0 70Z"/></svg>
+      <div class="zone-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="waves"></span><span class="spot"></span></div>
+      <div class="zone-inner">
+        <header class="chapter chapter-compact reveal">
+          <div>
+            <p class="eyebrow">Quando o sol se põe</p>
+            <h2 class="split-title">O <em>Bar</em> do Terral</h2>
+          </div>
+          <p>Drinks da casa, cervejas feitas aqui e aquela dose para fechar a noite, pedidos direto para a sua mesa.</p>
+        </header>
+        <div id="bar-sections"></div>
+      </div>
+    </div>
+
+    <div class="empty-search" id="empty-search" hidden>
+      <p class="empty-title">Nada encontrado</p>
+      <p>Tente outro nome ou ingrediente.</p>
+      <button type="button" class="btn btn-outline" id="empty-clear">Limpar busca</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/marca/terral-logo-branco-sm.webp" srcset="assets/marca/terral-logo-branco-sm.webp 320w, assets/marca/terral-logo-branco.webp 1000w" sizes="190px" alt="Terral Maresias" width="320" height="182" loading="lazy">
+        <p>Restaurante e bar em Maresias desde 1987. Cozinha do mar, drinks da casa e cervejas feitas aqui.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/terral.maresias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Terral"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" class="dot"/></svg></a>
+          <a href="tel:+551238656488" aria-label="Ligar para o Terral"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.5l1.6 4.2-2.1 1.4a11.5 11.5 0 0 0 6.4 6.4l1.4-2.1L20 15.5V19a2 2 0 0 1-2.2 2A16.8 16.8 0 0 1 3 6.2 2 2 0 0 1 5 4Z"/></svg></a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Terral+Av.+Francisco+Loup+926+Maresias" target="_blank" rel="noopener noreferrer" aria-label="Ver o Terral no mapa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3>Endereço</h3>
+          <p>Av. Francisco Loup, 926<br>Maresias · São Sebastião · SP</p>
+          <a class="footer-link" href="https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Terral+Av.+Francisco+Loup+926+Maresias" target="_blank" rel="noopener noreferrer">Como chegar ↗</a>
+        </div>
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <p><a class="footer-link" href="tel:+551238656488">(12) 3865-6488</a></p>
+          <p><a class="footer-link footer-ig" href="https://www.instagram.com/terral.maresias/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" class="dot"/></svg>@terral.maresias</a></p>
+        </div>
+        <div class="footer-col">
+          <h3>Navegue</h3>
+          <ul>
+            <li><a class="footer-link" href="#menu">Cardápio</a></li>
+            <li><a class="footer-link" href="#bar">O Bar</a></li>
+            <li><button type="button" class="footer-link" data-dialog="story">Nossa casa</button></li>
+            <li><button type="button" class="footer-link" data-dialog="info">Sobre este cardápio</button></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Horário</h3>
+          <p>Todos os dias, a partir das 12h</p>
+          <p>Seg a qui até 21h<br>Sex e sáb até 22h<br>Dom até 20h</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Terral Maresias. Todos os direitos reservados.</p>
+      <p class="footer-note">Imagens de pratos e bebidas ilustrativas. Informe alergias e restrições à equipe.</p>
+      <a class="to-top" href="#top">Voltar ao topo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="floating" aria-live="polite">
+    <button type="button" class="order-chip" id="order-chip" hidden></button>
+    <button type="button" class="cart-fab is-empty" id="cart-fab" data-open-cart>
+      <span class="fab-left"><span class="fab-count" data-cart-count>0</span><span class="fab-label">Ver sacola</span></span>
+      <span class="fab-total" id="fab-total">R$ 0,00</span>
+    </button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="detail" class="modal modal-detail" aria-labelledby="detail-title">
+    <button type="button" class="close" data-close aria-label="Fechar">×</button>
+    <div id="detail-content"></div>
+  </dialog>
+
+  <dialog id="cart" class="modal drawer" aria-label="Sacola e pedido">
+    <div id="cart-content" class="drawer-wrap"></div>
+  </dialog>
+
+  <dialog id="info" class="modal modal-text" aria-labelledby="info-title">
+    <button type="button" class="close" data-close aria-label="Fechar">×</button>
+    <div class="text-body">
+      <p class="eyebrow">Bom saber</p>
+      <h2 id="info-title">À vontade.<br>Bem informado.</h2>
+      <p>Os nomes, ingredientes e preços deste cardápio foram organizados a partir do material fornecido pelo Terral.</p>
+      <h3>Imagens</h3>
+      <p>As fotos extraídas do cardápio são identificadas. As imagens dos pratos e bebidas marcadas como ilustrativas mostram uma sugestão de apresentação: a quantidade e os ingredientes podem variar. As fotos do ambiente são do próprio Terral.</p>
+      <h3>Porções e disponibilidade</h3>
+      <p>“Meia” e “inteira” são os tamanhos informados no cardápio. A equipe confirma o rendimento e a disponibilidade ao receber o pedido.</p>
+      <h3>Ingredientes e restrições</h3>
+      <p>As descrições não substituem a confirmação da cozinha sobre ingredientes, alergias ou restrições. Use o campo de observação ou fale com a equipe.</p>
+      <h3>Pedidos e pagamento</h3>
+      <p><b>Na mesa:</b> o primeiro pedido abre a sua comanda. Peça quantas rodadas quiser e, no final, toque em “Pedir a conta” para pagar com PIX pelo cardápio ou com cartão na maquininha. A taxa de serviço é opcional.</p>
+      <p><b>Para viagem:</b> o pagamento é feito na hora do pedido, com PIX pelo cardápio ou cartão no caixa. O preparo começa após o pagamento.</p>
+    </div>
+  </dialog>
+
+  <dialog id="story" class="modal modal-text" aria-labelledby="story-title">
+    <button type="button" class="close" data-close aria-label="Fechar">×</button>
+    <div class="story-layout">
+      <div class="story-side">
+        <img src="assets/ambiente/fachada-sm.webp" alt="Fachada do Terral à noite, com a estrutura de bambu iluminada" loading="lazy">
+        <p class="story-year"><span>1987</span>desde</p>
+      </div>
+      <div class="text-body">
+        <p class="eyebrow">Maresias · desde 1987</p>
+        <h2 id="story-title">Um vento.<br>Uma história.</h2>
+        <p>O Terral nasceu em 30 de dezembro de 1987, para receber os surfistas que saíam do mar. O nome vem do vento que sopra da terra para o mar e ajuda a formar as ondas.</p>
+        <p>Hoje, a casa acolhe todos que visitam Maresias, com uma cozinha cheia de personalidade, um bar para as noites de verão e o prazer de receber bem.</p>
+        <div class="story-strip">
+          <img src="assets/casa/salao-rede-sm.webp" alt="Salão do Terral com rede e árvores" loading="lazy">
+          <img src="assets/casa/entrada-aloha-sm.webp" alt="Entrada do Terral com a placa Aloha" loading="lazy">
+        </div>
+        <div class="address">
+          <p class="eyebrow">Venha à nossa mesa</p>
+          <p>Av. Francisco Loup, 926<br>Maresias · São Paulo</p>
+          <a href="tel:+551238656488">(12) 3865-6488</a>
+        </div>
+        <a class="btn btn-primary" href="https://www.instagram.com/terral.maresias/" target="_blank" rel="noopener noreferrer">Veja o Terral no Instagram ↗</a>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
