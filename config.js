@@ -19,7 +19,7 @@
  */
 window.TERRAL_CONFIG = {
   restaurant: 'Terral Maresias',
-  teamPin: '1987',
+  teamPin: 'Deus2026#',
 
   // Número que recebe os pedidos no WhatsApp: DDI + DDD + número, só dígitos.
   // Funciona como plano de segurança: só é acionado sozinho se o painel da

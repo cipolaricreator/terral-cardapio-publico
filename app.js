@@ -1286,7 +1286,7 @@ function renderPinGate(root, onOk) {
     <img src="assets/marca/terral-logo-branco-sm.webp" alt="Terral" width="220" height="126">
     <h1>Painel da equipe</h1>
     <p>Digite a senha para continuar.</p>
-    <form id="pin-form"><input type="password" inputmode="numeric" autocomplete="off" placeholder="Senha" autofocus><button type="submit" class="btn btn-primary">Entrar</button></form>
+    <form id="pin-form"><input type="password" autocomplete="off" placeholder="Senha" autofocus><button type="submit" class="btn btn-primary">Entrar</button></form>
     <p class="pin-err" hidden>Senha incorreta.</p>
   </div>`;
   root.querySelector('#pin-form').addEventListener('submit', e => {
