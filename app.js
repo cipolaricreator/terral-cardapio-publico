@@ -79,11 +79,37 @@ const dbReady = (async () => {
   try { DB = await window.claude.use('db'); } catch { DB = null; }
   return DB;
 })();
+
+// API REST própria (backend na hospedagem do cliente) — usada pelo painel
+// quando não há Artifact/DB disponível. Mesmo contrato de dados dos pedidos.
+const pinHeader = () => sessionStorage.getItem('terral:pin') || '';
+async function apiGet(url) {
+  try { const res = await fetch(url, { headers: { 'X-Team-Pin': pinHeader() } }); return res.ok ? await res.json() : null; }
+  catch { return null; }
+}
+async function apiPost(url, body) {
+  try {
+    const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Team-Pin': pinHeader() }, body: JSON.stringify(body || {}) });
+    return res.ok ? await res.json() : null;
+  } catch { return null; }
+}
+function pollOrders(url, cb, ms = 4000) {
+  let stopped = false;
+  (async function tick() {
+    if (stopped) return;
+    const data = await apiGet(url);
+    if (data) cb(data.orders || []);
+    if (!stopped) setTimeout(tick, ms);
+  })();
+  return () => { stopped = true; };
+}
+
 async function syncOrderToDb(o) {
   await dbReady;
-  if (!DB || !o) return false;
-  try { await DB.collection('orders').doc(o.code).set(o); return true; }
-  catch { return false; }
+  if (!o) return false;
+  if (DB) { try { await DB.collection('orders').doc(o.code).set(o); return true; } catch { /* tenta a API própria abaixo */ } }
+  if (CFG.orderEndpoint) return !!(await apiPost(CFG.orderEndpoint, { type: 'sync', text: '', order: o, sentAt: new Date().toISOString() }));
+  return false;
 }
 
 const ICON = {
@@ -1266,7 +1292,7 @@ function renderPinGate(root, onOk) {
   root.querySelector('#pin-form').addEventListener('submit', e => {
     e.preventDefault();
     const val = root.querySelector('input').value.trim();
-    if (val === String(CFG.teamPin || '1987')) { sessionStorage.setItem('terral:pin-ok', '1'); onOk(); }
+    if (val === String(CFG.teamPin || '1987')) { sessionStorage.setItem('terral:pin-ok', '1'); sessionStorage.setItem('terral:pin', val); onOk(); }
     else { root.querySelector('.pin-err').hidden = false; root.querySelector('input').value = ''; root.querySelector('input').focus(); }
   });
 }
@@ -1297,14 +1323,25 @@ function startCozinha(root) {
     <div class="painel-list" id="pcz-list"><p class="painel-empty">Carregando…</p></div>
   </div>`;
   startClock(root);
+  const statuses = ['aberta', 'conta', 'aguardando', 'caixa'];
   dbReady.then(() => {
     const list = () => $('#pcz-list');
-    if (!DB) { if (list()) list().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio. Abra o link publicado da equipe (com banco de dados ativo) para ver os pedidos aqui.</p>'; return; }
-    DB.collection('orders').where('status', 'in', ['aberta', 'conta', 'aguardando', 'caixa']).orderBy('createdAt')
-      .onSnapshot(snap => {
+    if (DB) {
+      DB.collection('orders').where('status', 'in', statuses).orderBy('createdAt')
+        .onSnapshot(snap => {
+          if (!list()) return;
+          list().innerHTML = snap.empty ? '<p class="painel-empty">Nenhum pedido em aberto agora.</p>' : snap.docs.map(d => orderCardHtml(d.data())).join('');
+        }, () => { if (list()) list().innerHTML = '<p class="painel-empty">Não foi possível carregar os pedidos.</p>'; });
+      return;
+    }
+    if (CFG.orderEndpoint) {
+      pollOrders(CFG.orderEndpoint + '?status=' + statuses.join(','), orders => {
         if (!list()) return;
-        list().innerHTML = snap.empty ? '<p class="painel-empty">Nenhum pedido em aberto agora.</p>' : snap.docs.map(d => orderCardHtml(d.data())).join('');
-      }, () => { if (list()) list().innerHTML = '<p class="painel-empty">Não foi possível carregar os pedidos.</p>'; });
+        list().innerHTML = orders.length ? orders.map(orderCardHtml).join('') : '<p class="painel-empty">Nenhum pedido em aberto agora.</p>';
+      });
+      return;
+    }
+    if (list()) list().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio.</p>';
   });
 }
 
@@ -1335,22 +1372,31 @@ function printReceipt(o) {
 }
 async function printOrderByCode(code) {
   await dbReady;
-  if (!DB) return;
-  const snap = await DB.collection('orders').doc(code).get();
-  if (snap.exists) printReceipt(snap.data());
+  if (DB) { const snap = await DB.collection('orders').doc(code).get(); if (snap.exists) printReceipt(snap.data()); return; }
+  if (CFG.orderEndpoint) {
+    const data = await apiGet(CFG.orderEndpoint + '/' + encodeURIComponent(code));
+    if (data?.order) printReceipt(data.order);
+  }
 }
 async function confirmPayment(code) {
   await dbReady;
-  if (!DB) return;
-  const ref = DB.collection('orders').doc(code);
-  const snap = await ref.get();
-  if (!snap.exists) return;
-  const o = Object.assign({}, snap.data());
-  o.status = 'pago';
-  o.paidAt = Date.now();
-  await ref.set(o);
-  printReceipt(o);
-  toast('Pagamento confirmado');
+  if (DB) {
+    const ref = DB.collection('orders').doc(code);
+    const snap = await ref.get();
+    if (!snap.exists) return;
+    const o = Object.assign({}, snap.data());
+    o.status = 'pago';
+    o.paidAt = Date.now();
+    await ref.set(o);
+    printReceipt(o);
+    toast('Pagamento confirmado');
+    return;
+  }
+  if (CFG.orderEndpoint) {
+    const data = await apiPost(CFG.orderEndpoint + '/' + encodeURIComponent(code) + '/pay', {});
+    if (data?.order) { printReceipt(data.order); toast('Pagamento confirmado'); }
+    else toast('Não foi possível confirmar. Tente novamente.');
+  }
 }
 async function copyText(text, btn) {
   try { await navigator.clipboard.writeText(text); } catch { /* sem permissão de área de transferência */ }
@@ -1392,23 +1438,37 @@ function startCaixa(root) {
     else if (printBtn) printOrderByCode(printBtn.dataset.print);
     else if (copyBtn) copyText(copyBtn.dataset.copy, copyBtn);
   });
+  const pendStatuses = ['conta', 'aguardando', 'caixa'];
+  const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
+  const histHtml = orders => {
+    const hist = $('#pcx-hist');
+    if (!hist) return;
+    const todays = orders.filter(o => o.createdAt >= todayStart.getTime());
+    hist.innerHTML = todays.length ? todays.map(o => `<div class="hist-row"><span>#${esc(o.code)} · ${o.mode === 'mesa' ? 'Mesa ' + esc(o.table) : MODE_LABEL[o.mode]}</span><span>${money(orderTotals(o).total)}</span></div>`).join('') : '<p class="painel-empty">Nada pago ainda hoje.</p>';
+  };
   dbReady.then(() => {
     const list = () => $('#pcx-list');
-    if (!DB) { if (list()) list().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio.</p>'; return; }
-    DB.collection('orders').where('status', 'in', ['conta', 'aguardando', 'caixa']).orderBy('createdAt')
-      .onSnapshot(snap => {
+    if (DB) {
+      DB.collection('orders').where('status', 'in', pendStatuses).orderBy('createdAt')
+        .onSnapshot(snap => {
+          if (!list()) return;
+          list().innerHTML = snap.empty ? '<p class="painel-empty">Nenhuma conta pendente agora.</p>' : snap.docs.map(d => caixaCardHtml(d.data())).join('');
+          mountPix();
+        });
+      DB.collection('orders').where('status', '==', 'pago').orderBy('createdAt')
+        .onSnapshot(snap => histHtml(snap.docs.map(d => d.data())));
+      return;
+    }
+    if (CFG.orderEndpoint) {
+      pollOrders(CFG.orderEndpoint + '?status=' + pendStatuses.join(','), orders => {
         if (!list()) return;
-        list().innerHTML = snap.empty ? '<p class="painel-empty">Nenhuma conta pendente agora.</p>' : snap.docs.map(d => caixaCardHtml(d.data())).join('');
+        list().innerHTML = orders.length ? orders.map(caixaCardHtml).join('') : '<p class="painel-empty">Nenhuma conta pendente agora.</p>';
         mountPix();
       });
-    const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
-    DB.collection('orders').where('status', '==', 'pago').orderBy('createdAt')
-      .onSnapshot(snap => {
-        const hist = $('#pcx-hist');
-        if (!hist) return;
-        const todays = snap.docs.map(d => d.data()).filter(o => o.createdAt >= todayStart.getTime());
-        hist.innerHTML = todays.length ? todays.map(o => `<div class="hist-row"><span>#${esc(o.code)} · ${o.mode === 'mesa' ? 'Mesa ' + esc(o.table) : MODE_LABEL[o.mode]}</span><span>${money(orderTotals(o).total)}</span></div>`).join('') : '<p class="painel-empty">Nada pago ainda hoje.</p>';
-      });
+      pollOrders(CFG.orderEndpoint + '?status=pago', histHtml, 15000);
+      return;
+    }
+    if (list()) list().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio.</p>';
   });
 }
 async function initPainel(view) {

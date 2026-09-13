@@ -12,11 +12,9 @@
  * - Abra o MESMO endereço do cardápio terminando em #cozinha (tela da cozinha,
  *   mostra os pedidos chegando) ou #caixa (tela do caixa, com o PIX pronto
  *   para gerar e o botão de confirmar pagamento + imprimir comprovante).
- * - Isso só funciona de verdade na versão publicada como "Artifact" da
- *   equipe (com banco de dados ligado) — é a versão de demonstração/testes.
- *   Na hospedagem definitiva do cliente, essa parte precisa de um sistema
- *   próprio (backend); o campo "orderEndpoint" abaixo é o lugar certo para
- *   ligar esse sistema quando ele existir — o cardápio já sabe conversar com ele.
+ * - Já está ligado ao backend próprio (pasta server/, rodando na VPS via
+ *   pm2 e exposto em /terral/api/ pelo "orderEndpoint" abaixo) — funciona
+ *   de verdade nesta hospedagem, não só na demonstração.
  * - Senha para abrir o painel no celular/computador da equipe:
  */
 window.TERRAL_CONFIG = {
@@ -29,13 +27,11 @@ window.TERRAL_CONFIG = {
   // ATENÇÃO: confirme o número oficial. A versão terral2 usa 5511944852667.
   whatsapp: '551238656488',
 
-  // Sistema próprio (backend) do caixa e da cozinha, quando existir.
-  // Coloque aqui o endereço (URL) que deve receber os pedidos.
-  // O cardápio envia um POST em JSON: { type, text, order, sentAt }
-  //   type: 'pedido' (novo pedido), 'rodada' (nova rodada da mesa),
-  //         'conta' (mesa pediu a conta no cartão) ou 'pagamento' (cliente informou PIX pago)
-  // Ordem de tentativa: painel da equipe (Artifact) → este endereço → WhatsApp.
-  orderEndpoint: '',
+  // Backend próprio do painel (cozinha/caixa), rodando na VPS via pm2 e
+  // exposto pelo nginx em /terral/api/. O cardápio envia um POST em JSON:
+  // { type, text, order, sentAt } e o painel consulta o mesmo endereço.
+  // Ordem de tentativa ao enviar pedido: painel (Artifact, se houver) → este endereço → WhatsApp.
+  orderEndpoint: 'https://aondadigital.com.br/terral/api/orders',
 
   // PIX: enquanto "key" estiver vazio, o pagamento aparece em modo demonstração.
   pix: {
