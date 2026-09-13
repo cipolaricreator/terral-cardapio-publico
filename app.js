@@ -1484,8 +1484,10 @@ function startCaixa(root) {
   mountCaixa(root.querySelector('.painel-slot'));
 }
 
-/* ---------- Visão geral (todos os pedidos) ---------- */
+/* ---------- Visão geral (todos os pedidos, em cards) ---------- */
 const PAYABLE_STATUSES = ['conta', 'aguardando', 'caixa'];
+const STATUS_TONE = { pago: 'ok', cancelado: 'bad', aberta: 'neutral' };
+const statusTone = status => STATUS_TONE[status] || 'warn';
 function geralStatsHtml(orders) {
   const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
   const todays = orders.filter(o => (o.createdAt || 0) >= todayStart.getTime());
@@ -1493,34 +1495,32 @@ function geralStatsHtml(orders) {
   const abertos = orders.filter(o => ['aberta', 'conta', 'aguardando', 'caixa'].includes(o.status));
   const faturamento = pagosHoje.reduce((s, o) => s + orderTotals(o).total, 0);
   return `<div class="geral-stats">
-    <div class="stat"><b>${todays.length}</b><span>Pedidos hoje</span></div>
-    <div class="stat"><b>${money(faturamento)}</b><span>Faturado hoje</span></div>
-    <div class="stat"><b>${abertos.length}</b><span>Em aberto agora</span></div>
+    <div class="stat stat-brass"><span class="stat-ico">💰</span><b>${money(faturamento)}</b><span>Faturado hoje</span></div>
+    <div class="stat"><span class="stat-ico">📦</span><b>${todays.length}</b><span>Pedidos hoje</span></div>
+    <div class="stat"><span class="stat-ico">🔥</span><b>${abertos.length}</b><span>Em aberto agora</span></div>
   </div>`;
 }
-function geralRowHtml(o) {
+function geralCardHtml(o) {
   const t = orderTotals(o);
+  const allItems = o.rounds.flatMap(r => r.items);
   const where = o.mode === 'mesa' ? `Mesa ${esc(o.table)}` : o.mode === 'retirada' ? 'Retirada' : 'Entrega';
-  return `<tr data-code="${esc(o.code)}">
-    <td>#${esc(o.code)}</td>
-    <td>${esc(o.name || '')}</td>
-    <td>${esc(where)}</td>
-    <td><span class="badge-status">${esc(PANEL_STATUS_LABEL[o.status] || o.status)}</span></td>
-    <td>${money(t.total)}</td>
-    <td>${timeOf(o.createdAt)}</td>
-    <td class="geral-actions">
-      ${PAYABLE_STATUSES.includes(o.status) ? `<button type="button" class="btn btn-outline btn-sm" data-confirm-pay="${esc(o.code)}">Confirmar pgto</button>` : ''}
-      <button type="button" class="btn btn-outline btn-sm" data-print="${esc(o.code)}">🖨️</button>
-    </td>
-  </tr>`;
+  return `<article class="ord-card geral-card tone-${statusTone(o.status)}" data-code="${esc(o.code)}">
+    <header class="ord-head">
+      <div><b>${esc(where)}</b><span>${esc(o.name || '')}</span></div>
+      <div class="ord-meta"><span class="ord-code">#${esc(o.code)}</span><span class="ord-time">${timeOf(o.createdAt)}</span></div>
+    </header>
+    ${miniList(allItems)}
+    <footer class="ord-foot"><span class="badge-status">${esc(PANEL_STATUS_LABEL[o.status] || o.status)}</span><span>${money(t.total)}</span></footer>
+    <div class="geral-actions">
+      ${PAYABLE_STATUSES.includes(o.status) ? `<button type="button" class="btn btn-outline btn-sm" data-confirm-pay="${esc(o.code)}">Confirmar pagamento</button>` : ''}
+      <button type="button" class="btn btn-outline btn-sm" data-print="${esc(o.code)}">🖨️ Imprimir</button>
+    </div>
+  </article>`;
 }
 function mountGeral(container) {
   const wrap = document.createElement('div');
   wrap.innerHTML = `<div class="geral-stats"><p class="painel-empty">Carregando…</p></div>
-    <div class="geral-table-wrap"><table class="geral-table">
-      <thead><tr><th>Pedido</th><th>Cliente</th><th>Onde</th><th>Status</th><th>Total</th><th>Hora</th><th></th></tr></thead>
-      <tbody><tr><td colspan="7" class="painel-empty">Carregando…</td></tr></tbody>
-    </table></div>`;
+    <div class="painel-list"><p class="painel-empty">Carregando…</p></div>`;
   container.replaceChildren(wrap);
   wrap.addEventListener('click', e => {
     const t = e.target;
@@ -1530,22 +1530,22 @@ function mountGeral(container) {
     else if (printBtn) printOrderByCode(printBtn.dataset.print);
   });
   const statsEl = () => wrap.querySelector('.geral-stats');
-  const bodyEl = () => wrap.querySelector('tbody');
+  const listEl = () => wrap.querySelector('.painel-list');
   const render = orders => {
-    if (!statsEl() || !bodyEl()) return;
+    if (!statsEl() || !listEl()) return;
     const sorted = orders.slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
     statsEl().outerHTML = geralStatsHtml(orders);
-    bodyEl().innerHTML = sorted.length ? sorted.map(geralRowHtml).join('') : '<tr><td colspan="7" class="painel-empty">Nenhum pedido ainda.</td></tr>';
+    listEl().innerHTML = sorted.length ? sorted.map(geralCardHtml).join('') : '<p class="painel-empty">Nenhum pedido ainda.</p>';
   };
   let unsub = null;
   dbReady.then(() => {
     if (DB) {
       unsub = DB.collection('orders').orderBy('createdAt')
-        .onSnapshot(snap => render(snap.docs.map(d => d.data())), () => { if (bodyEl()) bodyEl().innerHTML = '<tr><td colspan="7" class="painel-empty">Não foi possível carregar os pedidos.</td></tr>'; });
+        .onSnapshot(snap => render(snap.docs.map(d => d.data())), () => { if (listEl()) listEl().innerHTML = '<p class="painel-empty">Não foi possível carregar os pedidos.</p>'; });
       return;
     }
     if (CFG.orderEndpoint) { unsub = pollOrders(CFG.orderEndpoint, render); return; }
-    if (bodyEl()) bodyEl().innerHTML = '<tr><td colspan="7" class="painel-empty">Painel indisponível nesta versão do cardápio.</td></tr>';
+    if (listEl()) listEl().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio.</p>';
   });
   return () => { if (typeof unsub === 'function') unsub(); };
 }
@@ -1556,7 +1556,10 @@ const PAINEL_TABS = [
 ];
 function startPainelGeral(root) {
   root.innerHTML = `<div class="painel crm">
-    <header class="painel-top"><h1>Painel Terral</h1><span class="painel-clock"></span></header>
+    <header class="painel-top">
+      <div><h1>Painel Terral</h1><p class="painel-sub"><span class="live-dot"></span>Cozinha, caixa e pedidos em tempo real</p></div>
+      <span class="painel-clock"></span>
+    </header>
     <nav class="painel-tabs">${PAINEL_TABS.map(t => `<button type="button" class="tab-btn" data-tab="${t.id}">${t.label}</button>`).join('')}</nav>
     <div class="painel-tabbody"></div>
   </div>`;
