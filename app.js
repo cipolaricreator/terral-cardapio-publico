@@ -1317,17 +1317,19 @@ function orderCardHtml(o) {
     <footer class="ord-foot"><span class="badge-status">${esc(PANEL_STATUS_LABEL[o.status] || o.status)}</span><span>${money(t.sub)}</span></footer>
   </article>`;
 }
-function startCozinha(root) {
-  root.innerHTML = `<div class="painel cozinha">
-    <header class="painel-top"><h1>Cozinha</h1><span class="painel-clock"></span></header>
-    <div class="painel-list" id="pcz-list"><p class="painel-empty">Carregando…</p></div>
-  </div>`;
-  startClock(root);
+// mountX(container): monta a tela dentro de "container" e devolve uma função
+// "parar" (cancela polling/onSnapshot). Usado tanto pelas rotas dedicadas
+// (#cozinha, #caixa) quanto pelas abas do painel unificado (#painel).
+function mountCozinha(container) {
+  const wrap = document.createElement('div');
+  wrap.innerHTML = '<div class="painel-list"><p class="painel-empty">Carregando…</p></div>';
+  container.replaceChildren(wrap);
+  const list = () => wrap.querySelector('.painel-list');
   const statuses = ['aberta', 'conta', 'aguardando', 'caixa'];
+  let unsub = null;
   dbReady.then(() => {
-    const list = () => $('#pcz-list');
     if (DB) {
-      DB.collection('orders').where('status', 'in', statuses).orderBy('createdAt')
+      unsub = DB.collection('orders').where('status', 'in', statuses).orderBy('createdAt')
         .onSnapshot(snap => {
           if (!list()) return;
           list().innerHTML = snap.empty ? '<p class="painel-empty">Nenhum pedido em aberto agora.</p>' : snap.docs.map(d => orderCardHtml(d.data())).join('');
@@ -1335,7 +1337,7 @@ function startCozinha(root) {
       return;
     }
     if (CFG.orderEndpoint) {
-      pollOrders(CFG.orderEndpoint + '?status=' + statuses.join(','), orders => {
+      unsub = pollOrders(CFG.orderEndpoint + '?status=' + statuses.join(','), orders => {
         if (!list()) return;
         list().innerHTML = orders.length ? orders.map(orderCardHtml).join('') : '<p class="painel-empty">Nenhum pedido em aberto agora.</p>';
       });
@@ -1343,6 +1345,12 @@ function startCozinha(root) {
     }
     if (list()) list().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio.</p>';
   });
+  return () => { if (typeof unsub === 'function') unsub(); };
+}
+function startCozinha(root) {
+  root.innerHTML = '<div class="painel cozinha"><header class="painel-top"><h1>Cozinha</h1><span class="painel-clock"></span></header><div class="painel-slot"></div></div>';
+  startClock(root);
+  mountCozinha(root.querySelector('.painel-slot'));
 }
 
 function receiptHtml(o) {
@@ -1422,14 +1430,11 @@ function caixaCardHtml(o) {
     </div>
   </article>`;
 }
-function startCaixa(root) {
-  root.innerHTML = `<div class="painel caixa">
-    <header class="painel-top"><h1>Caixa</h1><span class="painel-clock"></span></header>
-    <div class="painel-list" id="pcx-list"><p class="painel-empty">Carregando…</p></div>
-    <details class="painel-history"><summary>Pagos hoje</summary><div id="pcx-hist"><p class="painel-empty">—</p></div></details>
-  </div>`;
-  startClock(root);
-  root.addEventListener('click', e => {
+function mountCaixa(container) {
+  const wrap = document.createElement('div');
+  wrap.innerHTML = '<div class="painel-list"><p class="painel-empty">Carregando…</p></div><details class="painel-history"><summary>Pagos hoje</summary><div class="pcx-hist"><p class="painel-empty">—</p></div></details>';
+  container.replaceChildren(wrap);
+  wrap.addEventListener('click', e => {
     const t = e.target;
     const confirmBtn = t.closest('[data-confirm-pay]');
     const printBtn = t.closest('[data-print]');
@@ -1438,43 +1443,148 @@ function startCaixa(root) {
     else if (printBtn) printOrderByCode(printBtn.dataset.print);
     else if (copyBtn) copyText(copyBtn.dataset.copy, copyBtn);
   });
+  const list = () => wrap.querySelector('.painel-list');
+  const hist = () => wrap.querySelector('.pcx-hist');
   const pendStatuses = ['conta', 'aguardando', 'caixa'];
   const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
   const histHtml = orders => {
-    const hist = $('#pcx-hist');
-    if (!hist) return;
+    if (!hist()) return;
     const todays = orders.filter(o => o.createdAt >= todayStart.getTime());
-    hist.innerHTML = todays.length ? todays.map(o => `<div class="hist-row"><span>#${esc(o.code)} · ${o.mode === 'mesa' ? 'Mesa ' + esc(o.table) : MODE_LABEL[o.mode]}</span><span>${money(orderTotals(o).total)}</span></div>`).join('') : '<p class="painel-empty">Nada pago ainda hoje.</p>';
+    hist().innerHTML = todays.length ? todays.map(o => `<div class="hist-row"><span>#${esc(o.code)} · ${o.mode === 'mesa' ? 'Mesa ' + esc(o.table) : MODE_LABEL[o.mode]}</span><span>${money(orderTotals(o).total)}</span></div>`).join('') : '<p class="painel-empty">Nada pago ainda hoje.</p>';
   };
+  let unsub1 = null, unsub2 = null;
   dbReady.then(() => {
-    const list = () => $('#pcx-list');
     if (DB) {
-      DB.collection('orders').where('status', 'in', pendStatuses).orderBy('createdAt')
+      unsub1 = DB.collection('orders').where('status', 'in', pendStatuses).orderBy('createdAt')
         .onSnapshot(snap => {
           if (!list()) return;
           list().innerHTML = snap.empty ? '<p class="painel-empty">Nenhuma conta pendente agora.</p>' : snap.docs.map(d => caixaCardHtml(d.data())).join('');
           mountPix();
         });
-      DB.collection('orders').where('status', '==', 'pago').orderBy('createdAt')
+      unsub2 = DB.collection('orders').where('status', '==', 'pago').orderBy('createdAt')
         .onSnapshot(snap => histHtml(snap.docs.map(d => d.data())));
       return;
     }
     if (CFG.orderEndpoint) {
-      pollOrders(CFG.orderEndpoint + '?status=' + pendStatuses.join(','), orders => {
+      unsub1 = pollOrders(CFG.orderEndpoint + '?status=' + pendStatuses.join(','), orders => {
         if (!list()) return;
         list().innerHTML = orders.length ? orders.map(caixaCardHtml).join('') : '<p class="painel-empty">Nenhuma conta pendente agora.</p>';
         mountPix();
       });
-      pollOrders(CFG.orderEndpoint + '?status=pago', histHtml, 15000);
+      unsub2 = pollOrders(CFG.orderEndpoint + '?status=pago', histHtml, 15000);
       return;
     }
     if (list()) list().innerHTML = '<p class="painel-empty">Painel indisponível nesta versão do cardápio.</p>';
   });
+  return () => { if (typeof unsub1 === 'function') unsub1(); if (typeof unsub2 === 'function') unsub2(); };
+}
+function startCaixa(root) {
+  root.innerHTML = '<div class="painel caixa"><header class="painel-top"><h1>Caixa</h1><span class="painel-clock"></span></header><div class="painel-slot"></div></div>';
+  startClock(root);
+  mountCaixa(root.querySelector('.painel-slot'));
+}
+
+/* ---------- Visão geral (todos os pedidos) ---------- */
+const PAYABLE_STATUSES = ['conta', 'aguardando', 'caixa'];
+function geralStatsHtml(orders) {
+  const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
+  const todays = orders.filter(o => (o.createdAt || 0) >= todayStart.getTime());
+  const pagosHoje = todays.filter(o => o.status === 'pago');
+  const abertos = orders.filter(o => ['aberta', 'conta', 'aguardando', 'caixa'].includes(o.status));
+  const faturamento = pagosHoje.reduce((s, o) => s + orderTotals(o).total, 0);
+  return `<div class="geral-stats">
+    <div class="stat"><b>${todays.length}</b><span>Pedidos hoje</span></div>
+    <div class="stat"><b>${money(faturamento)}</b><span>Faturado hoje</span></div>
+    <div class="stat"><b>${abertos.length}</b><span>Em aberto agora</span></div>
+  </div>`;
+}
+function geralRowHtml(o) {
+  const t = orderTotals(o);
+  const where = o.mode === 'mesa' ? `Mesa ${esc(o.table)}` : o.mode === 'retirada' ? 'Retirada' : 'Entrega';
+  return `<tr data-code="${esc(o.code)}">
+    <td>#${esc(o.code)}</td>
+    <td>${esc(o.name || '')}</td>
+    <td>${esc(where)}</td>
+    <td><span class="badge-status">${esc(PANEL_STATUS_LABEL[o.status] || o.status)}</span></td>
+    <td>${money(t.total)}</td>
+    <td>${timeOf(o.createdAt)}</td>
+    <td class="geral-actions">
+      ${PAYABLE_STATUSES.includes(o.status) ? `<button type="button" class="btn btn-outline btn-sm" data-confirm-pay="${esc(o.code)}">Confirmar pgto</button>` : ''}
+      <button type="button" class="btn btn-outline btn-sm" data-print="${esc(o.code)}">🖨️</button>
+    </td>
+  </tr>`;
+}
+function mountGeral(container) {
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `<div class="geral-stats"><p class="painel-empty">Carregando…</p></div>
+    <div class="geral-table-wrap"><table class="geral-table">
+      <thead><tr><th>Pedido</th><th>Cliente</th><th>Onde</th><th>Status</th><th>Total</th><th>Hora</th><th></th></tr></thead>
+      <tbody><tr><td colspan="7" class="painel-empty">Carregando…</td></tr></tbody>
+    </table></div>`;
+  container.replaceChildren(wrap);
+  wrap.addEventListener('click', e => {
+    const t = e.target;
+    const confirmBtn = t.closest('[data-confirm-pay]');
+    const printBtn = t.closest('[data-print]');
+    if (confirmBtn) confirmPayment(confirmBtn.dataset.confirmPay);
+    else if (printBtn) printOrderByCode(printBtn.dataset.print);
+  });
+  const statsEl = () => wrap.querySelector('.geral-stats');
+  const bodyEl = () => wrap.querySelector('tbody');
+  const render = orders => {
+    if (!statsEl() || !bodyEl()) return;
+    const sorted = orders.slice().sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+    statsEl().outerHTML = geralStatsHtml(orders);
+    bodyEl().innerHTML = sorted.length ? sorted.map(geralRowHtml).join('') : '<tr><td colspan="7" class="painel-empty">Nenhum pedido ainda.</td></tr>';
+  };
+  let unsub = null;
+  dbReady.then(() => {
+    if (DB) {
+      unsub = DB.collection('orders').orderBy('createdAt')
+        .onSnapshot(snap => render(snap.docs.map(d => d.data())), () => { if (bodyEl()) bodyEl().innerHTML = '<tr><td colspan="7" class="painel-empty">Não foi possível carregar os pedidos.</td></tr>'; });
+      return;
+    }
+    if (CFG.orderEndpoint) { unsub = pollOrders(CFG.orderEndpoint, render); return; }
+    if (bodyEl()) bodyEl().innerHTML = '<tr><td colspan="7" class="painel-empty">Painel indisponível nesta versão do cardápio.</td></tr>';
+  });
+  return () => { if (typeof unsub === 'function') unsub(); };
+}
+const PAINEL_TABS = [
+  { id: 'geral', label: 'Visão geral' },
+  { id: 'cozinha', label: 'Cozinha' },
+  { id: 'caixa', label: 'Caixa' }
+];
+function startPainelGeral(root) {
+  root.innerHTML = `<div class="painel crm">
+    <header class="painel-top"><h1>Painel Terral</h1><span class="painel-clock"></span></header>
+    <nav class="painel-tabs">${PAINEL_TABS.map(t => `<button type="button" class="tab-btn" data-tab="${t.id}">${t.label}</button>`).join('')}</nav>
+    <div class="painel-tabbody"></div>
+  </div>`;
+  startClock(root);
+  const tabbody = root.querySelector('.painel-tabbody');
+  let stop = null;
+  function setTab(id) {
+    if (typeof stop === 'function') stop();
+    root.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === id));
+    if (id === 'cozinha') stop = mountCozinha(tabbody);
+    else if (id === 'caixa') stop = mountCaixa(tabbody);
+    else stop = mountGeral(tabbody);
+  }
+  root.querySelector('.painel-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('[data-tab]');
+    if (btn) setTab(btn.dataset.tab);
+  });
+  setTab('geral');
 }
 async function initPainel(view) {
-  document.title = (view === 'caixa' ? 'Caixa' : 'Cozinha') + ' · Terral';
+  const titles = { caixa: 'Caixa', cozinha: 'Cozinha', painel: 'Painel' };
+  document.title = (titles[view] || 'Painel') + ' · Terral';
   const root = paintPanelShell();
-  const start = () => view === 'caixa' ? startCaixa(root) : startCozinha(root);
+  const start = () => {
+    if (view === 'caixa') return startCaixa(root);
+    if (view === 'cozinha') return startCozinha(root);
+    return startPainelGeral(root);
+  };
   if (sessionStorage.getItem('terral:pin-ok') === '1') start();
   else renderPinGate(root, start);
 }
@@ -1509,7 +1619,7 @@ function setupGlobalClicks() {
 
 async function init() {
   const routeHash = location.hash.slice(1);
-  if (routeHash === 'cozinha' || routeHash === 'caixa') { await initPainel(routeHash); return; }
+  if (routeHash === 'cozinha' || routeHash === 'caixa' || routeHash === 'painel') { await initPainel(routeHash); return; }
   setupDialogs();
   setupDetail();
   setupCart();
